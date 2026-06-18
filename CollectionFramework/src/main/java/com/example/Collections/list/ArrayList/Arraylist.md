@@ -73,3 +73,23 @@ ArrayList<String> listWithCapacity = new ArrayList<>(20);
 // Creating an ArrayList from another collection
 List<String> anotherList = Arrays.asList( "Apple", "Banana", "Orange");
 ArrayList<String> listFromCollection = new ArrayList<>(anotherList);
+
+
+Adding Elements
+
+ArrayList<String> list = new ArrayList<>();
+
+// Adding elements to the end of the list
+list. add( "Apple");
+list. add( "Banana" );
+
+// Adding an element at a specific index
+list.add(1, "Orange"); // "Orange" will be added at index 1, shifting "Banana" to index 2
+
+
+Time Complexity
+
+. Access by index (get) is O(1).
+. Adding an element is O(n) in the worst case when resizing occurs.
+. Removing elements can be O(n) because it may involve shifting elements.
+· Iteration is O(n).
