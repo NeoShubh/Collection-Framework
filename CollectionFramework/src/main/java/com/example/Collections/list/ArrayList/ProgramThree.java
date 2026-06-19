@@ -12,7 +12,7 @@ public class ProgramThree {
         list.add(4);
         list.add(5);
 
-        List<Integer> list3 = List.of(6, 7, 8, 9);
+        List<Integer> list3 = List.of(6, 7, 8, 9,0);
 
         list.addAll(list3);
         System.out.println(list);
@@ -32,7 +32,14 @@ public class ProgramThree {
         list.remove(Integer.valueOf(1));
         System.out.println(list);//now we will see thing we wanted
 
+        System.out.println(alpha.contains("a"));
 //        we can convert it to array
-    list.toArray();
+        Object[] objlist = list.toArray();
+        System.out.println(objlist);
+        Integer[] integerArr = list.toArray(new Integer[0]);// its one way to convert list into integer array if we dont write new Integer then java assumes it as object array
+        System.out.println(integerArr);
+
+        list.sort(null); //comparater padhenge program four main
+        System.out.println(list);
     }
 }
