@@ -34,7 +34,7 @@ public class ProgramTwo {
 }
 
 
-class Student {
+ class Student {
     private String name;
     private int marks;
 
